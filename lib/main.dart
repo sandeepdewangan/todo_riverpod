@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:todo_riverpod/1-synchronous/pages/provider/theme/theme_provider.dart';
-import 'package:todo_riverpod/1-synchronous/pages/todo_page.dart';
+import 'package:todo_riverpod/2-async-enum/pages/provider/theme/theme_provider.dart';
+import 'package:todo_riverpod/2-async-enum/pages/todo_page.dart';
+import 'package:todo_riverpod/2-async-enum/repo/fake_todo_repo.dart';
+import 'package:todo_riverpod/2-async-enum/repo/providers/todo_repo_provider.dart';
 
 void main() {
-  runApp(ProviderScope(child: const MyApp()));
+  runApp(
+    ProviderScope(
+      overrides: [todoRepoProvider.overrideWithValue(FakeTodoRepo())],
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends ConsumerWidget {
