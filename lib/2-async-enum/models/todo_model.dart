@@ -1,6 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:uuid/uuid.dart';
-import 'package:json_annotation/json_annotation.dart';
 
 part 'todo_model.freezed.dart';
 part 'todo_model.g.dart';
