@@ -2,7 +2,7 @@
 
 Implement Todo Riverpod Using
 
-1. Synchronous TODO App
+1. Synchronous TODO App (https://github.com/heavyfran/todo_riverpod_sync)
 
    ✅ Optimization - Using ProviderScope to restrict the items to rebuild again and again.
 
@@ -12,7 +12,7 @@ Implement Todo Riverpod Using
 
 2. Asynchronous TODO App
 
-   1️⃣ enum based app
+   1️⃣ enum based app (https://github.com/heavyfran/todo_riverpod_enum)
 
    ✅ Computed States as a function not a seprate provider.
 
@@ -25,6 +25,6 @@ Implement Todo Riverpod Using
 
    2️⃣ sealed class based app
 
-   3️⃣ AsyncValue based app
+   3️⃣ AsyncValue based app (https://github.com/heavyfran/todo_riverpod_asyncvalue)
 
-   4️⃣ AsyncValue + Hive (data persistance) based app
+   4️⃣ AsyncValue + Hive (data persistance) based app (https://github.com/heavyfran/todo_riverpod_hive)
